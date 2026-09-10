@@ -812,6 +812,80 @@ h1, h2, h3, h4 {
 .featured__actions { display: flex; flex-wrap: wrap; gap: 14px; }
 
 /* ==========================================================================
+   PACIOM FEATURED PROJECT
+   ========================================================================== */
+
+.browser-frame--paciom {
+  background: #07120d;
+}
+
+.paciom-preview {
+  min-height: 340px;
+  padding: 42px;
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(74, 222, 128, 0.16),
+      transparent 45%
+    ),
+    linear-gradient(
+      145deg,
+      #07120d 0%,
+      #0b1d14 55%,
+      #06100b 100%
+    );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.paciom-preview__logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(110, 231, 160, 0.12);
+  border: 1px solid rgba(110, 231, 160, 0.25);
+
+  color: #8ff0b0;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  margin-bottom: 24px;
+}
+
+.paciom-preview__title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
+  color: #f5f3ec;
+  max-width: 8ch;
+}
+
+.paciom-preview__line {
+  width: 80px;
+  height: 1px;
+  margin: 28px 0;
+  background: rgba(143, 240, 176, 0.45);
+}
+
+.paciom-preview__cards {
+  display: flex;
+  gap: 10px;
+}
+
+.paciom-preview__cards span {
+  width: 70px;
+  height: 34px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ==========================================================================
    PROJECT GRIDS (client / demo)
    ========================================================================== */
 
